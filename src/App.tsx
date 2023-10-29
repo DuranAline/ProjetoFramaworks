@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import CommentForm from './components/CommentForm';
 import CommentList from './components/CommentList';
-import Header from './components/Header';
+import Header from './components/header.css';
 import './App.css';
+
+interface Comment {
+  author: string;
+  text: string;
+  dateTime: string;
+}
 
 const App: React.FC = () => {
   const [comments, setComments] = useState<Comment[]>([]);
@@ -15,7 +21,7 @@ const App: React.FC = () => {
 
   // Adicionar um novo comentário
   const addComment = (author: string, text: string) => {
-    const newComment = {
+    const newComment: Comment = {
       author,
       text,
       dateTime: new Date().toLocaleString(),
