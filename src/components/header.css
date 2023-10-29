@@ -1,0 +1,39 @@
+.header {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.title {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  margin-bottom: 20px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #333;
+}

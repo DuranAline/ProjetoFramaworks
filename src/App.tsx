@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import CommentForm from './components/CommentForm';
 import CommentList from './components/CommentList';
+import Header from './components/Header';
+import './App.css'; // Importe o arquivo de estilos para o App
 
 const App: React.FC = () => {
   const [comments, setComments] = useState<Comment[]>([]);
@@ -25,10 +27,13 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <h1>Diário de Comentários</h1>
-      <CommentForm onAddComment={addComment} />
-      <p>Total de Comentários: {comments.length}</p>
-      <CommentList comments={comments} />
+      <Header />
+      <div className="content"> {/* Crie uma div para o conteúdo, se necessário */}
+        <h1>Diário de Comentários</h1>
+        <CommentForm onAddComment={addComment} />
+        <p>Total de Comentários: {comments.length}</p>
+        <CommentList comments={comments} />
+      </div>
     </div>
   );
 };

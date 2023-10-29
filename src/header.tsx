@@ -1,12 +1,12 @@
 import React from 'react';
-import { Fontisto } from '@expo/vector-icons';
+import { FaPassport } from 'react-icons/fa';
 import './Header.css';
 
 const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="icon">
-        <Fontisto name="passport" size={24} color="black" />
+        <FaPassport size={24} color="black" />
       </div>
       <h1 className="title">Diário de uma Viagem</h1>
       <nav>
