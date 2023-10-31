@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import CommentForm from './components/CommentForm';
 import CommentList from './components/CommentList';
-import Header from './components/header.css';
-import './App.css';
+import Header from './components/header';
+import Carousel from './components/Carousel'; // Importe o componente Carousel
 
+
+// Define a interface para a estrutura de um comentário
 interface Comment {
   author: string;
   text: string;
@@ -11,6 +13,7 @@ interface Comment {
 }
 
 const App: React.FC = () => {
+  // Estado para armazenar os comentários
   const [comments, setComments] = useState<Comment[]>([]);
 
   // Carregar comentários do armazenamento local quando o aplicativo é montado
@@ -39,8 +42,9 @@ const App: React.FC = () => {
       <Header />
       <div className="content">
         <h1>Diário de Comentários</h1>
-        <CommentForm onAddComment={addComment} />
+        <Carousel /> {/* Renderiza o componente Carousel acima dos comentários */}
         <p>Total de Comentários: {comments.length}</p>
+        <CommentForm onAddComment={addComment} />
         <CommentList comments={comments} />
       </div>
     </div>
