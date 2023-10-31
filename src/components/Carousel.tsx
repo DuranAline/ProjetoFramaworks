@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import './Carousel.css'; // Importe o arquivo CSS
 
-// Define as imagens do carrossel (adicionar mais imagens conforme necessário)
+// Defina as imagens do carrossel (substitua as URLs pelas URLs reais das imagens)
 const carouselImages = [
   'url_da_imagem_1',
   'url_da_imagem_2',
