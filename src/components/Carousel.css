@@ -1,41 +1,50 @@
 .carousel {
-    text-align: center;
-    background-color: #fff; /* Fundo branco para destaque */
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .carousel button {
-    background-color: #ffa500; /* Cor de laranja para botões */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2em;
-    border-radius: 5px;
-    margin: 0 10px;
-    transition: background-color 0.3s;
-  }
-  
-  .carousel button:hover {
-    background-color: #ff6347; /* Cor laranja mais escura no hover */
-  }
-  
-  .carousel .carousel-image {
-    width: 100%;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    margin: 20px 0;
-    border-radius: 5px;
-  }
-  
-  .carousel p {
-    font-size: 1.2em;
-    margin: 20px 0;
-    color: #333; /* Cor do texto */
-  }
-  
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.carousel h1 {
+  font-size: 2em;
+  color: #333;
+  margin: 20px 0;
+}
+
+.carousel p {
+  font-size: 1.2em;
+  margin: 20px 0;
+  color: #333;
+}
+
+.carousel .carousel-image {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.carousel .comment-section {
+  /* Estilos para a seção de comentários */
+}
+
+.carousel button {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 5px;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+.carousel button:hover {
+  background-color: #ff6347;
+}

@@ -1,5 +1,5 @@
 .comment-list {
-    background-color: #f0f2f5; /* Fundo cinza claro */
+    background-color: #fff0da; /* Fundo cinza claro */
     border-radius: 8px;
     max-width: 600px;
     margin: 0 auto;
@@ -9,7 +9,7 @@
   }
   
   .comment-box {
-    border: 1px solid #e9ebee; /* Borda clara */
+    border: 1px solid black; /* Borda clara */
     border-radius: 8px;
     margin: 10px 0;
     padding: 12px;

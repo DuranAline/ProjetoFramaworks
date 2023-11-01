@@ -41,7 +41,6 @@ const App: React.FC = () => {
     <div>
       <Header />
       <div className="content">
-        <h1>Diário de Comentários</h1>
         <Carousel /> {/* Renderiza o componente Carousel acima dos comentários */}
         <p>Total de Comentários: {comments.length}</p>
         <CommentForm onAddComment={addComment} />
