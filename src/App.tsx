@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import CommentForm from './components/CommentForm';
 import CommentList from './components/CommentList';
-import Header from './components/header';
 import Carousel from './components/Carousel'; // Importe o componente Carousel
+import Header from './components/Header';
 
 
 // Define a interface para a estrutura de um comentário
