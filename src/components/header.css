@@ -1,39 +1,44 @@
 .header {
-  background-color: #f7f7f7;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  background-color: #ffa500;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.icon img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1; /* Para que o título ocupe o espaço restante na linha */
 }
 
 .title {
-  font-family: 'Arial', sans-serif;
-  color: #333;
   font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.icon {
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .menu {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: center;
 }
 
 .menu li {
-  margin: 0 15px;
+  margin-right: 20px;
 }
 
 .menu a {
   text-decoration: none;
-  color: #555;
+  color: #fff;
   font-size: 16px;
-  transition: color 0.3s ease;
 }
 
-.menu a:hover {
-  color: #333;
-}
+/* Estilize o ícone conforme necessário */

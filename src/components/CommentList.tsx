@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './CommentList.css';
 // Definindo a interface Comment para representar a estrutura de um comentário
 interface Comment {
   author: string;    // Propriedade para o nome do autor
@@ -15,12 +15,14 @@ interface CommentListProps {
 // Componente CommentList que renderiza uma lista de comentários
 const CommentList: React.FC<CommentListProps> = ({ comments }) => {
   return (
-    <div>
+    <div className="comment-list">
       {comments.map((comment, index) => (
-        <div key={index}>
-          <p>Nome: {comment.author}</p>         {/* Exibe o nome do autor do comentário */}
-          <p>Comentário: {comment.text}</p>     {/* Exibe o texto do comentário */}
-          <p>Data e Hora: {comment.dateTime}</p> /* Exibe a data e hora do comentário */
+        <div className="comment-box" key={index}>
+          <div className="comment">
+            <div className="comment-author">{comment.author}</div>
+            <div className="comment-text">{comment.text}</div>
+            <div className="comment-datetime">{comment.dateTime}</div>
+          </div>
         </div>
       ))}
     </div>
