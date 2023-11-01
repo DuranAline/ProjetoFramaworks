@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
 import CommentForm from './components/CommentForm';
 import CommentList from './components/CommentList';
-import Carousel from './components/Carousel'; // Importe o componente Carousel
+import CommentCount from './components/CommentCount'; // Importe o novo componente CommentCount
+import Carousel from './components/Carousel';
 import Header from './components/Header';
 
-
-// Define a interface para a estrutura de um comentário
 interface Comment {
   author: string;
   text: string;
@@ -13,37 +12,31 @@ interface Comment {
 }
 
 const App: React.FC = () => {
-  // Estado para armazenar os comentários
   const [comments, setComments] = useState<Comment[]>([]);
 
-  // Carregar comentários do armazenamento local quando o aplicativo é montado
   useEffect(() => {
     const storedComments = JSON.parse(localStorage.getItem('comments') || '[]');
     setComments(storedComments);
   }, []);
 
-  // Adicionar um novo comentário
   const addComment = (author: string, text: string) => {
     const newComment: Comment = {
       author,
       text,
       dateTime: new Date().toLocaleString(),
     };
-    setComments([newComment, ...comments]);
+    const updatedComments = [newComment, ...comments];
+    setComments(updatedComments);
+    localStorage.setItem('comments', JSON.stringify(updatedComments)); // Atualize o armazenamento local
   };
-
-  // Salvar os comentários no armazenamento local sempre que houver uma mudança
-  useEffect(() => {
-    localStorage.setItem('comments', JSON.stringify(comments));
-  }, [comments]);
 
   return (
     <div>
       <Header />
       <div className="content">
-        <Carousel /> {/* Renderiza o componente Carousel acima dos comentários */}
-        <p>Total de Comentários: {comments.length}</p>
+        <Carousel />
         <CommentForm onAddComment={addComment} />
+        <CommentCount count={comments.length} /> 
         <CommentList comments={comments} />
       </div>
     </div>
