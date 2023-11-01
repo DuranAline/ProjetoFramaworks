@@ -6,7 +6,7 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="icon">
-     
+        <img src="/icon.png" alt="Ícone de Avião" />
       </div>
       <h1 className="title">Diário de uma Viagem</h1>
       <nav>

@@ -4,9 +4,9 @@ import './Carousel.css'; // Importe o arquivo CSS
 // Defina as imagens do carrossel (substitua as URLs pelas URLs reais das imagens)
 const carouselImages = [
   './image/sp.jpeg',
-  'url_da_imagem_2',
-  'url_da_imagem_3',
-  'url_da_imagem_4',
+  './image/tal.jpeg',
+  './image/to.webp',
+  './image/tc.png',
 ];
 
 const Carousel: React.FC = () => {
