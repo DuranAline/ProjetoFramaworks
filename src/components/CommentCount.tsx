@@ -1,4 +1,3 @@
-// CommentCount.tsx
 import React from 'react';
 import './CommentCount.css';
 
