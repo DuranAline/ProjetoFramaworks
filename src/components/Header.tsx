@@ -8,20 +8,7 @@ const Header: React.FC = () => {
         <img src="/image/icon.png" alt="Ícone de Avião" />
       </div>
       <div className="header-content">
-        <h1 className="title">Diário de uma Viagem</h1>
-        <nav>
-          <ul className="menu">
-            <li>
-              <a href="#fotos">Fotos</a>
-            </li>
-            <li>
-              <a href="#destinos">Destinos</a>
-            </li>
-            <li>
-              <a href="#onde-ficar">Onde Ficar</a>
-            </li>
-          </ul>
-        </nav>
+        <h1 className="title">DIÁRIO DE UMA VIAGEM</h1>
       </div>
     </header>
   );
