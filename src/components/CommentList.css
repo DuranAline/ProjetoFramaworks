@@ -1,35 +1,42 @@
-.comment-list {
-    background-color: #fff0da; 
-    border-radius: 8px;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left;
-  }
+.comment-list { 
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.comment-box {
+  display: flex; /* Usar flex para alinhar os elementos na horizontal */
+  border: 1px solid lightgray; /* Borda clara */
+  background-color: #fff0da;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 12px;
+}
+
+.comment {
+  font-size: 16px;
+  display: flex; /* Usar flex para alinhar os elementos na horizontal */
+  flex-direction: column; /* Alinhar os elementos verticalmente */
+  flex: 2; /* Distribuir espaço igualmente entre os elementos */
+}
+
+.comment-author {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.comment-text {
+  font-size: 16px;
+  color:#696969;
+}
+
+.comment-datetime {
+  color: #999;
+  font-size: 14px;
+  margin-left: auto; /* Alinhar a data à direita da caixa de comentário */
+   padding: 5px;
   
-  .comment-box {
-    border: 1px solid black; /* Borda clara */
-    border-radius: 8px;
-    margin: 10px 0;
-    padding: 12px;
-  }
-  
-  .comment {
-    font-size: 16px;
-  }
-  
-  .comment-author {
-    font-weight: bold;
-    margin-bottom: 6px;
-  }
-  
-  .comment-text {
-    font-size: 16px;
-  }
-  
-  .comment-datetime {
-    color: #999;
-    font-size: 14px;
-  }
-  
+}

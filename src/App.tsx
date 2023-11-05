@@ -3,7 +3,8 @@ import CommentForm from './components/CommentForm';
 import CommentList from './components/CommentList';
 import Carousel from './components/Carousel';
 import Header from './components/Header';
-import './components/App.css'
+import './components/App.css';
+import Footer from './components/Footer';
 
 // Define a interface para a estrutura de um comentário
 interface Comment {
@@ -42,11 +43,14 @@ const App: React.FC = () => {
       <Header />
       <div className="content">
         <Carousel />
-       
+
         <CommentForm onAddComment={addComment} />
-        <p className='paragrafo'>Total de Comentários: {comments.length}</p>
+        <div className="total-box">
+          <p className='paragrafo'>Total de Comentários: {comments.length}</p>
+        </div>
         <CommentList comments={comments} />
       </div>
+      <Footer /> 
     </div>
   );
 };
