@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import CommentForm from './components/CommentForm';
 import CommentList from './components/CommentList';
 import Carousel from './components/Carousel';
-import Header from './components/Header';
+import Header from './components/Header.css';
 import './components/App.css';
 import Footer from './components/Footer';
 
