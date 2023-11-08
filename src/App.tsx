@@ -34,10 +34,10 @@ const App: React.FC = () => {
     const updatedComments = [newComment, ...comments];
     setComments(updatedComments); // Atualiza o estado 'comments' com os novos comentários.
 
-    // Salva os comentários no localStorage para que sejam mantidos após a recarga da página.
+    // Salva os comentários no localStorage para que sejam mantidos após recarregar a página.
     localStorage.setItem('comments', JSON.stringify(updatedComments));
   };
-
+  //Esse trecho de código representa o retorno de componentes.
   return (
     <div>
       <Header />

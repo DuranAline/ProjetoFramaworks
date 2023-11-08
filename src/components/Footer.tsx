@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         {/* Um parágrafo que exibe um texto de boas-vindas ou instruções. */}
         <p className='paragrafo1'>Siga a gente nas redes sociais</p>
 
-        {/* Links para as redes sociais, cada um contendo uma imagem associada a elas. */}
+        {/* Links para as redes sociais, cada um contendo uma imagem associada a elas. Adicionado links somente como modelo */}
         <a href="#link-facebook">
           <img src="/image/facebook.png" alt="Facebook" />
         </a>
