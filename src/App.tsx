@@ -3,7 +3,7 @@ import CommentForm from './components/CommentForm';
 import CommentList from './components/CommentList';
 import Carousel from './components/Carousel';
 import Header from './components/Header.css';
-import  from './App.css';
+import  AppCss from './components/AppCss.css';
 import Footer from './components/Footer';
 
 // Define a interface para a estrutura de um comentário
